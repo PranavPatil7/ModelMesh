@@ -1,8 +1,8 @@
 # ML Pipelines with AWS Glue and Amazon SageMaker using Jenkins
 
-In this repository we are stepping through the implementation of a CI/CD ML pipeline using AWS Glue for data processing, Amazon SageMaker for training, versioning, and hosting Real-Time endpoints, and Jenkins CI/CD pipelines for orchestrating the Workflow.
+In this repository I am stepping through the implementation of a CI/CD ML pipeline using AWS Glue for data processing, Amazon SageMaker for training, versioning, and hosting Real-Time endpoints, and Jenkins CI/CD pipelines for orchestrating the Workflow.
 Through the usage of [AWS CLI APIs for SageMaker](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/), and [AWS CLI APIs for AWS Glue](https://docs.aws.amazon.com/cli/latest/reference/glue/index.html)
-we are showing how to implement CI/CD ML pipelines for processing data using [AWS Glue](https://docs.aws.amazon.com/glue/index.html), 
+I are showing how to implement CI/CD ML pipelines for processing data using [AWS Glue](https://docs.aws.amazon.com/glue/index.html), 
 training ML models using [Amazon SageMaker Training](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html),
 deploying ML models using [Amazon SageMaker Hosting Services](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html), 
 or perform batch inference by using [Amazon SageMaker Batch Transform](https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html).
@@ -61,7 +61,7 @@ Amazon SageMaker Model Registry for versioning ML models, IAM policies and roles
 
 ## Jenkins Environment
 
-In this section, we are setting up a local Jenkins environment for testing the ML pipelines. Please follow the [README](./jenkins/README.md) 
+In this section, I are setting up a local Jenkins environment for testing the ML pipelines. Please follow the [README](./jenkins/README.md) 
 for running Jenkins by using the provided Dockerfile in a container.
 
 ### Setup pipeline
@@ -92,21 +92,4 @@ Create a Jenkins pipeline by pointing to a Jenkinsfile directly from the Git rep
 
 ![Alt text](docs/training-pipeline-github.png?raw=true "Create Pipeline Git")
 
-## Conclusion
-
-In this example we shared how to implement end to end pipelines for Machine Learning workloads using Jenkins, by using APIs with 
-[AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/) for interacting with AWS Glue, Amazon SageMaker for processing, training, and [versioning ML models](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html),
-for creating real-time endpoints or perform batch inference using Amazon SageMaker.
-
-If you have any comments, please contact:
-
-Bruno Pistone <bpistone@amazon.com>
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
 
